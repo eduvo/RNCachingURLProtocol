@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RNCachingURLProtocol"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A simple cache for the HTTP protocol."
   s.homepage     = "https://github.com/iostaf/RNCachingURLProtocol"
   s.license      = 'MIT'
