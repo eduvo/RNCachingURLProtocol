@@ -1,0 +1,15 @@
+
+PODS:
+- RNCachingURLProtocol (0.1.0)
+
+DEPENDENCIES:
+- RNCachingURLProtocol (from `https://raw.github.com/iostaf/RNCachingURLProtocol/master/RNCachingURLProtocol.podspec')
+
+EXTERNAL SOURCES:
+  RNCachingURLProtocol:
+    :podspec: https://raw.github.com/iostaf/RNCachingURLProtocol/master/RNCachingURLProtocol.podspec
+
+SPEC CHECKSUMS:
+  RNCachingURLProtocol: b318263bdc5434a7186279c5e89cc26005d45588
+
+COCOAPODS: 0.16.3
