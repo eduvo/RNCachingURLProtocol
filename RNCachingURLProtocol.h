@@ -60,6 +60,8 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *RNShouldCacheURLHeader;
+
 @interface RNCachingURLProtocol : NSURLProtocol
 
 - (NSString *)cachePathForRequest:(NSURLRequest *)aRequest;

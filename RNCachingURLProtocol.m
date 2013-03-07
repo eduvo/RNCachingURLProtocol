@@ -45,6 +45,7 @@
 @property (nonatomic, readwrite, strong) NSURLRequest *redirectRequest;
 @end
 
+NSString *RNShouldCacheURLHeader    = @"X-RNShouldCache";
 static NSString *RNCachingURLHeader = @"X-RNCache";
 
 @interface RNCachingURLProtocol () // <NSURLConnectionDelegate, NSURLConnectionDataDelegate> iOS5-only
@@ -64,6 +65,7 @@ static NSString *RNCachingURLHeader = @"X-RNCache";
 {
   // only handle http requests we haven't marked with our header.
   if ([[[request URL] scheme] isEqualToString:@"http"] &&
+      ([request valueForHTTPHeaderField:RNShouldCacheURLHeader] != nil) &&
       ([request valueForHTTPHeaderField:RNCachingURLHeader] == nil)) {
     return YES;
   }

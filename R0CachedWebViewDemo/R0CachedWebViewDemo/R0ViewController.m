@@ -21,7 +21,8 @@
     [super viewWillAppear:animated];
 
     NSURL *url = [[NSURL alloc] initWithString:@"http://cnn.com"];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [request setValue:@"YES" forHTTPHeaderField:RNShouldCacheURLHeader];
     [self.webView loadRequest:request];
 }
 
